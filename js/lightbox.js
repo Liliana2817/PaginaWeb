@@ -12,7 +12,7 @@ imagenes.forEach(imagen =>{
 contenedorLight.addEventListener('click', (e)=>{
     if(e.target !== imagenesLight){
         contenedorLight.classList.toggle('show')
-        imagenesLight.classList.toggle(showImage)
+        imagenesLight.classList.toggle('showImage')
         bxmenu1.style.opacity = '1'
     }
 })
@@ -20,6 +20,6 @@ contenedorLight.addEventListener('click', (e)=>{
 const aparecerImagen = (imagen)=>{
     imagenesLight.scr = imagen;
     contenedorLight.classList.toggle('show')
-    imagenesLight.classList.toggle(showImage)
+    imagenesLight.classList.toggle('showImage')
     bxmenu1.style.opacity = '0'
 }

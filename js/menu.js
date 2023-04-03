@@ -2,7 +2,7 @@ const bxmenu = document.querySelector('.bx-menu');
 const menu = document.querySelector('.menu-navegacion');
 
 //console.log(menu)
-//console.log(bx-menu)
+//console.log(bxmenu)
 
 bxmenu.addEventListener('click',()=>{
       menu.classList.toggle("spread")
