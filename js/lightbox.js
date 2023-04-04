@@ -1,11 +1,11 @@
-const imagenes = document.querySelectorAll('img-galeria')
-const imagenesLight = document.querySelector('agregar-imagen')
-const contenedorLight = document.querySelector('imagen-light')
+const imagenes = document.querySelectorAll('.img-galeria')
+const imagenesLight = document.querySelector('.agregar-imagen')
+const contenedorLight = document.querySelector('.imagen-light')
 const bxmenu1 = document.querySelector('.bx-menu');
 
 imagenes.forEach(imagen =>{
     imagen.addEventListener('click', ()=>{      
-       aparecerImagen( imagen.getAttribute('scr'))
+       aparecerImagen( imagen.getAttribute('src'))
     })
 })
 
@@ -18,7 +18,7 @@ contenedorLight.addEventListener('click', (e)=>{
 })
 
 const aparecerImagen = (imagen)=>{
-    imagenesLight.scr = imagen;
+    imagenesLight.src = imagen;
     contenedorLight.classList.toggle('show')
     imagenesLight.classList.toggle('showImage')
     bxmenu1.style.opacity = '0'

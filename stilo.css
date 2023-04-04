@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* usare la sudoclase :root  para controlar el movimiento scroll*/
 :root{
  scroll-behavior: smooth;
 }
@@ -50,7 +50,7 @@ header{
  border-radius: 10px;
  box-shadow: 0 0 6px rgba(0,0,0, .5);
 }
-
+/* vw es el ancho de la pagina*/
 .menu-navegacion{
     position: fixed;
     top: 0;
@@ -113,7 +113,7 @@ header{
     margin-bottom: 20px;
 }
 .n-service{
-    margin-bottom :7px; ;
+    margin-bottom :7px; 
     color: #9f8ad0;
 }
 .number{
